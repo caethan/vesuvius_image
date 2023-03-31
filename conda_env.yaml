@@ -1,0 +1,10 @@
+zarr
+lmdb
+jupyter-dash
+numpy
+scipy
+skimage
+PIL
+tifffile
+matplotlib
+plotly
