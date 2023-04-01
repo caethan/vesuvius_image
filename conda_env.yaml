@@ -3,14 +3,13 @@ channels:
   - conda-forge
   - defaults
 dependencies:
-  - python=3.11
+  - python>=3.7
   # Various image processing tools
   - scikit-image=0.19
   - Pillow=9.4
   - tifffile=2021.11
   # Storage/database tools
   - zarr=2.14
-  - python-lmdb=1.4
   # Numerical analysis tools
   - numpy=1.23
   - scipy=1.10
