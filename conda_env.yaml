@@ -3,17 +3,16 @@ channels:
   - conda-forge
   - defaults
 dependencies:
-  - python>=3.7
   # Various image processing tools
-  - scikit-image=0.19
-  - Pillow=9.4
-  - tifffile=2021.11
+  - scikit-image
+  - Pillow
+  - tifffile
   # Storage/database tools
-  - zarr=2.14
+  - zarr
   # Numerical analysis tools
-  - numpy=1.23
-  - scipy=1.10
+  - numpy
+  - scipy
   # Plotting tools
-  - plotly=5.14
-  - matplotlib=3.7
-  - jupyter-dash=0.4
+  - plotly
+  - matplotlib
+  - jupyter-dash
