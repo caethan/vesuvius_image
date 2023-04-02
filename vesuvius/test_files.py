@@ -2,8 +2,8 @@ from jupyter_dash import JupyterDash
 import plotly.graph_objects as go
 from dash import dcc, html
 from dash.dependencies import Input, Output
-from image import PapyrusImage
-from volume import PapyrusVolume
+from .image import PapyrusImage
+from .volume import PapyrusVolume
 import shutil
 import os
 
