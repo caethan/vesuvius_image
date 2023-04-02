@@ -2,7 +2,6 @@ import time
 import numpy as np
 import os
 import zarr
-import zipfile
 
 class TimerError(Exception):
     pass
@@ -63,6 +62,10 @@ def downsample_slice(item, scale):
     """
     if scale == 0:
         return item
+    if isinstance(item, int):
+        return item // (2 ** scale)
+    if not isinstance(item, slice):
+        raise PapyrusDataException("Must index with slices")
     if item.step is not None:
         raise PapyrusDataException("Cannot use step slices on downsampled data")
     start = None if item.start is None else item.start // (2 ** scale)
