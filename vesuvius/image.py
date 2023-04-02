@@ -4,7 +4,7 @@ import numpy as np
 import skimage
 import tifffile
 import zarr
-from utils import (
+from .utils import (
     downsample_slice,
     open_store,
     get_min_datatype,
